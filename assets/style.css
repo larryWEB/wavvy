@@ -1,0 +1,144 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+background-color:black;
+}
+/* WHATSAPP FIXED ICON */
+.chat{
+    position:fixed;
+     top:93%;
+     display:flex;
+     justify-content:right;
+     align-items:right;
+    right:20px;
+    z-index: 99999;
+    
+    }
+    
+    .chat-text{
+    background-color:white;
+    width:110px;
+    text-align:center;
+    border-radius:8px;
+    line-height:1.7;
+    font-weight:500;
+     height:27px;
+     display:none;
+  
+    }
+    
+    .whatsapp-img{
+    border-radius:10%;
+    height:40px;
+     width:40px;
+    margin-top:-9px;
+    animation: scaleUp 3s ease-in-out infinite;
+    }
+  
+
+    @keyframes scaleUp {
+ 
+        0%,
+        100% { transform: translateY(0) scale(1); }
+        
+        50% { transform: translateY(-5px) scale(1.05);}
+        
+        }
+/* WHATSAPP FIXED ICON */
+
+
+.container {
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;;
+}
+
+
+h3{
+    color:white;
+text-align: center;
+padding: 5px 0 5px 0;
+font-size: 25px;
+}
+
+
+.logo-name{
+  color:rgb(223, 162, 7);
+  font-weight:bold;
+  font-size:17px;
+}
+
+h1{
+  color:rgb(223, 162, 7);
+    padding: 10px 0 10px 0;
+    font-size: 17px;
+}
+
+
+.container .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(40%);
+}
+.container header {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 550px;
+  text-align: center;
+}
+.container .deadline {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.deadline .div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+div p, span {
+  font-weight: 500;
+  color: #fff;
+}
+.deadline div p {
+  font-size: 30px;
+}
+
+.deadline div span {
+  text-transform: capitalize;
+  font-size: 15px;
+  position:relative;
+  color:rgb(223, 162, 7);
+}
+
+@media screen and (max-width: 300px) {
+  .container header {
+    font-size: 50px;
+  }
+}
