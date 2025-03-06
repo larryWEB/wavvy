@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Wave on Westend | Fine Dining Experience</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><img src="images/edited_waveonwestend_white_text.png" width="170" alt=""></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="slide active" style="background-image: url('/images/wave-13.JPG');">
+            <div class="slide-content">
+                <h1 class="slide-title">Experience Fine Dining</h1>
+                <p class="slide-text">Indulge in exquisite flavors, meticulously crafted by our award-winning chefs using only the finest, locally-sourced ingredients.</p>
+                <a href="#reservation" class="btn">Book a Table</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('/images/wave-20.JPG');">
+            <div class="slide-content">
+                <h1 class="slide-title">Savor the Moment</h1>
+                <p class="slide-text">Every dish tells a story of passion, tradition, and innovation. Join us for an unforgettable culinary journey.</p>
+                <a href="#menu" class="btn">View Our Menu</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('/images/wave-20.JPG');">
+            <div class="slide-content">
+                <h1 class="slide-title">Elegant Atmosphere</h1>
+                <p class="slide-text">Immerse yourself in our sophisticated ambiance, perfect for romantic dinners, family celebrations, or business meetings.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="slide-indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="/images/boss1.jpg" alt="Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <h3>A Culinary Journey Since 2005</h3>
+                    <p>Founded with a passion for exceptional food and service, Gourmet Haven has become a landmark destination for food enthusiasts seeking an extraordinary dining experience.</p>
+                    <p>Our philosophy is simple: use the finest seasonal ingredients, prepare them with precision and care, and serve them in an elegant yet comfortable atmosphere.</p>
+                    <p>Every dish that leaves our kitchen reflects our commitment to culinary excellence and our respect for the rich gastronomic traditions that inspire our menu.</p>
+                    <a href="#menu" class="btn">Explore Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-target="starters">Starters</button>
+                <button class="menu-tab" data-target="mains">Main Courses</button>
+                <button class="menu-tab" data-target="desserts">Desserts</button>
+                <button class="menu-tab" data-target="drinks">Drinks</button>
+            </div>
+            <div class="menu-items starters">
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="/images/WAVE (38 of 113).JPG" alt="Appetizer">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-title">
+                            <h4>Truffle Arancini</h4>
+                            <div class="menu-price">$12</div>
+                        </div>
+                        <div class="menu-description">Crispy risotto balls infused with black truffle, served with parmesan aioli</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="/images/WAVE (18 of 113).JPG" alt="Appetizer">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-title">
+                            <h4>Tuna Tartare</h4>
+                            <div class="menu-price">$16</div>
+                        </div>
+                        <div class="menu-description">Fresh tuna, avocado, mango, sesame seeds with citrus ponzu sauce</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="/images/WAVE (109 of 113).JPG" alt="Appetizer">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-title">
+                            <h4>Artisanal Cheese Board</h4>
+                            <div class="menu-price">$18</div>
+                        </div>
+                        <div class="menu-description">Selection of fine cheeses, honeycomb, fig jam, and artisanal crackers</div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Make a Reservation</h2>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6+">6+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Special Requests" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Book Now</button>
+                    </form>
+                </div>
+                <div class="reservation-details">
+                    <h3>Opening Hours</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📅</div>
+                            <div>
+                                <strong>Monday to Friday</strong><br>
+                                Lunch: 11:30 AM - 2:30 PM<br>
+                                Dinner: 5:30 PM - 10:00 PM
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📅</div>
+                            <div>
+                                <strong>Saturday & Sunday</strong><br>
+                                Brunch: 10:00 AM - 3:00 PM<br>
+                                Dinner: 5:00 PM - 11:00 PM
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Call Us</strong><br>
+                                (123) 456-7890
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1542243441118!2d5.758627673497823!3d5.544137533771954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad037fd38813%3A0x871abc50d21db8d8!2sWaveonwestend!5e0!3m2!1sen!2sng!4v1741267920263!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Guests Say</h2>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial">
+                        <div class="testimonial-img">
+                            <img src="/images/wave-42.JPG" alt="Customer">
+                        </div>
+                        <p class="testimonial-text">"An unforgettable dining experience! The truffle pasta was divine, and the service was impeccable. Gourmet Haven has become our favorite spot for special occasions."</p>
+                        <h4 class="testimonial-author">Sarah Johnson</h4>
+                        <p class="testimonial-position">Food Critic</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-img">
+                            <img src="/api/placeholder/80/80" alt="Customer">
+                        </div>
+                        <p class="testimonial-text">"From the moment we walked in, we were treated like royalty. The chef's tasting menu was a culinary journey worth every penny. Can't wait to return!"</p>
+                        <h4 class="testimonial-author">Michael Rodriguez</h4>
+                        <p class="testimonial-position">Wine Enthusiast</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-img">
+                            <img src="/api/placeholder/80/80" alt="Customer">
+                        </div>
+                        <p class="testimonial-text">"Celebrated our anniversary here and it exceeded all expectations. The attention to detail in every dish and the romantic atmosphere made it a night to remember."</p>
+                        <h4 class="testimonial-author">Emily & David Chen</h4>
+                        <p class="testimonial-position">Regular Patrons</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="control-btn prev-btn">&#10094;</button>
+                <button class="control-btn next-btn">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"> <img src="images/edited_waveonwestend_white_text.png" width="170"></div>
+                    <p class="footer-text">Elevating dining experiences through exceptional cuisine, impeccable service, and an elegant atmosphere.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info-footer">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>126/128 Westend Road, Bendel Estate, Airport Road, Effurun, Delta State</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>+2347078425122 <br> +2349152632080</div>
+                            
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>info@gourmethaven.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">Subscribe to our newsletter for special events, exclusive offers, and culinary insights.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email">
+                        <button class="newsletter-btn">→
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/yourwhatsappphonenumber" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
