@@ -1,0 +1,318 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Wave on Westend | Fine Dining Experience</title>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo"><img src="images/edited_waveonwestend_white_text.png" width="170" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    <style>
+
+/* Root Variables */
+:root {
+    /* Colors */
+    --primary-color: #d4af37;
+    --primary-hover: #c09c2c;
+    --text-color: #333;
+    --text-light: #666;
+    --text-lighter: #777;
+    --text-footer: #bbb;
+    --background-main: #f9f9f9;
+    --background-white: #fff;
+    --background-dark: #222;
+    --background-darker: #333;
+    --background-header: rgba(0, 0, 0, 0.8);
+    --background-header-scrolled: rgba(0, 0, 0, 0.95);
+    --border-color: #ddd;
+    --border-footer: #444;
+    --whatsapp-color: #25D366;
+    --whatsapp-header: #128C7E;
+    --online-status: #4CAF50;
+    --agent-hover: #f0f0f0;
+    --agent-avatar: #e1e1e1;
+    --agent-text: #555;
+    
+    /* Fonts */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Font Sizes */
+    --font-xl: 48px;
+    --font-lg: 36px;
+    --font-md-lg: 28px;
+    --font-md: 24px;
+    --font-sm-md: 20px;
+    --font-sm: 18px;
+    --font-xs: 16px;
+    --font-xxs: 14px;
+    --font-icon: 24px;
+    --font-icon-sm: 20px;
+    
+    /* Spacing */
+    --spacing-xl: 80px;
+    --spacing-lg: 60px;
+    --spacing-md: 50px;
+    --spacing-sm: 30px;
+    --spacing-xs: 20px;
+    --spacing-xxs: 15px;
+    --spacing-tiny: 10px;
+    
+    /* Borders & Shadows */
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --box-shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+       .rm-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        } 
+        
+        .rm-menu-wrapper {
+            text-align: center;
+            margin: 150px auto;
+        }
+        
+        .rm-pdf-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .rm-pdf-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color) ;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .rm-pdf-btn:hover {
+            background-color: var(--background-dark);
+
+        }
+        
+        .rm-view-btn {
+            background-color: var(--background-dark);
+        }
+        
+        .rm-view-btn:hover {
+            background-color: #4CAE4C;
+        }
+        
+        .rm-photo-gallery {
+            margin-top: 50px;
+        }
+        
+        .rm-gallery-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .rm-dishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .rm-dish-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .rm-dish-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .rm-dish-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .rm-dish-info {
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .rm-dish-name {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        
+        .rm-dish-desc {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+     
+     
+
+    </style>
+
+    <div class="rm-container">
+        <div class="rm-menu-wrapper">
+            <h1>Our Delicious Menu</h1>
+            <p>Explore our tasty selections and signature dishes.</p>
+            
+            <div class="rm-pdf-buttons">
+                <!-- Download button - forces download of the PDF -->
+                <a href="images/Complete Wave Food and Drink Menu webbb.pdf" download="Waveonwestend-Menu.pdf" class="rm-pdf-btn">Download Menu (PDF)</a>
+                
+                <!-- View button - opens PDF in a new tab -->
+                <a href="images/Complete Wave Food and Drink Menu webbb.pdf" target="_blank" class="rm-pdf-btn rm-view-btn">View Menu</a>
+            </div>
+        </div>
+        
+        <div class="rm-photo-gallery">
+            <h2 class="rm-gallery-title">Our Signature Dishes</h2>
+            <div class="rm-dishes-grid">
+                <!-- Gallery Item 1 -->
+                <div class="rm-dish-card">
+                    <img src="/images/menu 1.JPG" alt="Signature Pasta Dish" class="rm-dish-image">
+                    <div class="rm-dish-info">
+                        <h3 class="rm-dish-name">WAVE CHICKEN SALAD</h3>
+                        <p class="rm-dish-desc">Fresh vegetables and homemade pesto sauce</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="rm-dish-card">
+                    <img src="/images/menu 2.JPG" alt="Grilled Steak" class="rm-dish-image">
+                    <div class="rm-dish-info">
+                        <h3 class="rm-dish-name">LO MEIN NOODLES</h3>
+                        <p class="rm-dish-desc">Aged 28 days and grilled to perfection</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="rm-dish-card">
+                    <img src="/images/menu 3.JPG" alt="Seafood Platter" class="rm-dish-image">
+                    <div class="rm-dish-info">
+                        <h3 class="rm-dish-name">SPRING ROLLS</h3>
+                        <p class="rm-dish-desc">Fresh catch of the day with lemon butter</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="rm-dish-card">
+                    <img src="/images/menu 4 (1).JPG" alt="Chocolate Dessert" class="rm-dish-image">
+                    <div class="rm-dish-info">
+                        <h3 class="rm-dish-name">SHRIMPS SALAD</h3>
+                        <p class="rm-dish-desc">Served with vanilla bean ice cream</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="rm-dish-card">
+                    <img src="/images/menu 4 (2).JPG" alt="Signature Cocktail" class="rm-dish-image">
+                    <div class="rm-dish-info">
+                        <h3 class="rm-dish-name">CHINESE VEGETABLE RICE WITH SEAFOOD CURRY</h3>
+                        <p class="rm-dish-desc">Craft spirits with fresh-squeezed juices</p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"> <img src="images/edited_waveonwestend_white_text.png" width="170"></div>
+                    <p class="footer-text">Elevating dining experiences through exceptional cuisine, impeccable service, and an elegant atmosphere.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info-footer">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>126/128 Westend Road, Bendel Estate, Airport Road, Effurun, Delta State</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>+2347078425122 <br> +2349152632080</div>
+                            
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>contactwaveonwestend@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">Subscribe to our newsletter for special events, exclusive offers, and culinary insights.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email">
+                        <button class="newsletter-btn">→
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/yourwhatsappphonenumber" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
