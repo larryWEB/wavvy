@@ -589,6 +589,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // *******************************************
 });
 
+
+// CHAT---WIDGET
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chatButton = document.getElementById('chatButton');
+    const popupBox = document.getElementById('popupBox');
+    
+    // Toggle popup when chat button is clicked
+    chatButton.addEventListener('click', function() {
+      popupBox.classList.toggle('active');
+    });
+    
+    // Close popup when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!chatButton.contains(event.target) && !popupBox.contains(event.target)) {
+        popupBox.classList.remove('active');
+      }
+    });
+  });
+
+
 // Add some CSS styles dynamically for responsive design
 function addResponsiveStyles() {
     const styleElement = document.createElement('style');
