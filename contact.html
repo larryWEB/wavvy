@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Wave on Westend | Fine Dining Experience</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><img src="images/edited_waveonwestend_white_text.png" width="170" alt=""></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <style>
+       
+    /* Root Variables */
+:root {
+    /* Colors */
+    --primary-color: #d4af37;
+    --primary-hover: #c09c2c;
+    --text-color: #333;
+    --text-light: #666;
+    --text-lighter: #777;
+    --text-footer: #bbb;
+    --background-main: #f9f9f9;
+    --background-white: #fff;
+    --background-dark: #222;
+    --background-darker: #333;
+    --background-header: rgba(0, 0, 0, 0.8);
+    --background-header-scrolled: rgba(0, 0, 0, 0.95);
+    --border-color: #ddd;
+    --border-footer: #444;
+    --whatsapp-color: #25D366;
+    --whatsapp-header: #128C7E;
+    --online-status: #4CAF50;
+    --agent-hover: #f0f0f0;
+    --agent-avatar: #e1e1e1;
+    --agent-text: #555;
+    
+    /* Fonts */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Font Sizes */
+    --font-xl: 48px;
+    --font-lg: 36px;
+    --font-md-lg: 28px;
+    --font-md: 24px;
+    --font-sm-md: 20px;
+    --font-sm: 18px;
+    --font-xs: 16px;
+    --font-xxs: 14px;
+    --font-icon: 24px;
+    --font-icon-sm: 20px;
+    
+    /* Spacing */
+    --spacing-xl: 80px;
+    --spacing-lg: 60px;
+    --spacing-md: 50px;
+    --spacing-sm: 30px;
+    --spacing-xs: 20px;
+    --spacing-xxs: 15px;
+    --spacing-tiny: 10px;
+    
+    /* Borders & Shadows */
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --box-shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+        
+        .container-con {
+            width: 100%;
+            max-width: 1200px;
+            margin:0 auto;
+        }
+        
+        
+        .hero-contact {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/wave-33.JPG') center/cover no-repeat;
+          height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+           
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-section {
+            padding: 4rem 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .info-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .info-item .content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            color: #2c3e50;
+        }
+        
+        .hours {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .contact-form {
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #c0392b;
+        }
+        
+        .map-section {
+            padding: 2rem 0 4rem;
+        }
+        
+        .map-container {
+            height: 450px;
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+      
+        
+    
+        .social-links a:hover {
+            background-color: #e74c3c;
+        }
+        
+        .newsletter-section {
+            padding: 3rem 0;
+            background-color: #f0ece3;
+        }
+        
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .newsletter-container h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .newsletter-container p {
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+       
+        
+        
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0 1rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+   
+
+    <section class="hero-contact">
+        <div class="container-con">
+            <h1>Contact Us</h1>
+            <p>Elevating dining experiences through exceptional cuisine, impeccable service, and an elegant atmosphere.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="content">
+                            <h3>Address</h3>
+                            <p>126/128 Westend Road, Bendel Estate,</p>
+                            <p>Airport Road, Effurun, Delta State</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="content">
+                            <h3>Phone</h3>
+                            <p>+234 707 842 5122</p>
+                            <p>+234 915 263 2080</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="content">
+                            <h3>Email</h3>
+                            <p>contactwaveonwestend@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="content">
+                            <h3>Hours of Operation</h3>
+                            <div class="hours">
+                                <span>Monday - Thursday:</span>
+                                <span>10:00 AM - 10:00 PM</span>
+                                <span>Friday - Saturday:</span>
+                                <span>10:00 AM - 11:00 PM</span>
+                                <span>Sunday:</span>
+                                <span>11:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-share-alt"></i>
+                        <div class="content">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-yelp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="reservation">Reservation Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="private">Private Dining</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Newsletter</h2>
+            <p>Subscribe to our newsletter for special events, exclusive offers, and culinary insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1542243441118!2d5.758627673497823!3d5.544137533771954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad037fd38813%3A0x871abc50d21db8d8!2sWaveonwestend!5e0!3m2!1sen!2sng!4v1741431638832!5m2!1sen!2sng" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+      
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"> <img src="images/edited_waveonwestend_white_text.png" width="170"></div>
+                    <p class="footer-text">Elevating dining experiences through exceptional cuisine, impeccable service, and an elegant atmosphere.</p>
+                    <div class="social-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info-footer">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>126/128 Westend Road, Bendel Estate, Airport Road, Effurun, Delta State</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>+2347078425122 <br> +2349152632080</div>
+                            
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>contactwaveonwestend@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">Subscribe to our newsletter for special events, exclusive offers, and culinary insights.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email">
+                        <button class="newsletter-btn">→
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Wave on Westend | Fine Dining Experience</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><img src="images/edited_waveonwestend_white_text.png" width="170" alt=""></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <style>
+      
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        h1:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #d4af37;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        
+       
+        /* Hero Section */
+        .hero {
+            height: 400px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .hero h1:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        
+        /* About Sections */
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background-color: #f5f5f5;
+            margin: 60px 0;
+        }
+        
+        .founder-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            margin: 50px 0;
+        }
+        
+        .founder-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .founder-image img {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .founder-bio {
+            flex: 2;
+        }
+        
+        .philosophy-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .philosophy-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .philosophy-list li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: #d4af37;
+            border-radius: 50%;
+        }
+        
+        .awards-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .awards-list li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: baseline;
+        }
+        
+        .award-year {
+            font-weight: 700;
+            margin-right: 15px;
+            color: #d4af37;
+            min-width: 60px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #f5f5f5;
+        }
+        
+        .team-name {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .team-title {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        
+        .sustainability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .sustainability-item {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 3px solid #d4af37;
+        }
+        
+        .sustainability-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 5px;
+            margin: 40px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .contact-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                height: 300px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .founder-container {
+                flex-direction: column;
+            }
+            
+            .founder-image {
+                min-width: 100%;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+            <p>Creating exceptional culinary experiences since 2010</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <h1>About Elegant Cuisine</h1>
+            <p>Founded in 2010 by Chef Isabella Martinez, Elegant Cuisine began with a simple yet profound vision: to transform dining into an art form that engages all the senses. What started as a small, intimate establishment with just twelve tables has evolved into one of the most celebrated culinary destinations in New York City.</p>
+            <p>Our journey has been guided by an unwavering commitment to culinary excellence, innovative techniques, and an atmosphere that balances luxury with warmth. Each dish tells a story—of tradition, of creativity, of the finest ingredients sourced from around the world and from our local partners.</p>
+            
+            <div class="section-divider"></div>
+            
+            <h2>Meet Our Founder</h2>
+            <div class="founder-container">
+                <div class="founder-image">
+                    <img src="https://via.placeholder.com/500x600" alt="Chef Isabella Martinez">
+                </div>
+                <div class="founder-bio">
+                    <h3>Chef Isabella Martinez</h3>
+                    <p><em>Executive Chef & Founder</em></p>
+                    <p>Chef Isabella's culinary journey began in her grandmother's kitchen in Barcelona, where she developed a profound appreciation for the way food brings people together. After formal training at the Culinary Institute of America and apprenticeships under Michelin-starred chefs in Paris and Tokyo, she honed a distinctive style that marries classical techniques with bold innovation.</p>
+                    <p>Her approach to cuisine is deeply influenced by her travels across five continents, where she studied indigenous ingredients and traditional methods. "Food is a universal language," she often says. "In my kitchen, we speak it with respect, passion, and a touch of daring."</p>
+                    <p>When not in the restaurant, Chef Isabella dedicates her time to the Elegant Foundation, which provides culinary education to underprivileged youth and advocates for sustainable food systems.</p>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <h2>Our Philosophy</h2>
+            <p>At Elegant Cuisine, we believe that dining is more than just eating—it's an experience that engages all the senses. Our culinary approach centers around four core principles:</p>
+            
+            <ul class="philosophy-list">
+                <li><strong>Exceptional Ingredients:</strong> We source only the finest seasonal ingredients, building relationships with local farmers, fishermen, and artisanal producers who share our commitment to quality and sustainability.</li>
+                <li><strong>Artful Preparation:</strong> Our techniques honor traditional methods while embracing innovation, resulting in dishes that surprise and delight with every bite.</li>
+                <li><strong>Meticulous Presentation:</strong> Each plate is a canvas, thoughtfully composed to create visual harmony that enhances the dining experience.</li>
+                <li><strong>Impeccable Service:</strong> Our staff is trained to provide attentive yet unobtrusive service, ensuring your experience is seamless from the moment you arrive until your departure.</li>
+            </ul>
+            
+            <div class="section-divider"></div>
+            
+            <h2>Our Space</h2>
+            <p>Designed by acclaimed architect Marco Visconti, our dining space reflects our culinary philosophy through its blend of classic elegance and contemporary sensibility. The open kitchen serves as the centerpiece of our restaurant, allowing guests to witness the culinary artistry in action, while intimate seating arrangements create an atmosphere of both elegance and comfort.</p>
+            <p>Our dining room features handcrafted wooden tables, custom lighting that casts a warm glow, and floor-to-ceiling windows that overlook our meticulously maintained herb garden. The space accommodates 60 guests, ensuring personalized attention for each diner.</p>
+            
+            <div class="section-divider"></div>
+            
+            <h2>Awards & Recognition</h2>
+            <ul class="awards-list">
+                <li><span class="award-year">2023</span> James Beard Award for Outstanding Restaurant</li>
+                <li><span class="award-year">2022</span> Michelin Star Recipient (Third Consecutive Year)</li>
+                <li><span class="award-year">2021</span> Food & Wine Magazine's Best New Chef Award - Isabella Martinez</li>
+                <li><span class="award-year">2020</span> Wine Spectator Award of Excellence</li>
+                <li><span class="award-year">2019</span> New York Times 5-Star Review</li>
+            </ul>
+            <p><em>"Chef Martinez's restaurant doesn't merely serve food; it creates moments of pure culinary transcendence."</em> — The New York Times</p>
+            
+            <div class="section-divider"></div>
+            
+            <h2>Our Team</h2>
+            <p>Behind every exceptional meal is an extraordinary team. Led by Executive Chef Isabella Martinez, our kitchen operates with precision and passion. Our front-of-house team, under the direction of Maître d' James Wilson, ensures that your experience extends beyond the plate.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300" alt="Chef Isabella Martinez">
+                    <h4 class="team-name">Isabella Martinez</h4>
+                    <p class="team-title">Executive Chef & Founder</p>
+                    <p>Culinary visionary with over 20 years of experience in fine dining.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300" alt="James Wilson">
+                    <h4 class="team-name">James Wilson</h4>
+                    <p class="team-title">Maître d'</p>
+                    <p>Creating memorable dining experiences with impeccable service standards.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300" alt="Sofia Chen">
+                    <h4 class="team-name">Sofia Chen</h4>
+                    <p class="team-title">Head Sommelier</p>
+                    <p>Expert in wine pairings that elevate our culinary creations.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300" alt="Marco Santos">
+                    <h4 class="team-name">Marco Santos</h4>
+                    <p class="team-title">Pastry Chef</p>
+                    <p>Creating artful desserts that balance tradition and innovation.</p>
+                </div>
+            </div>
+            
+          
+    </section>
+
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"> <img src="images/edited_waveonwestend_white_text.png" width="170"></div>
+                    <p class="footer-text">Elevating dining experiences through exceptional cuisine, impeccable service, and an elegant atmosphere.</p>
+                    <div class="social-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info-footer">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>126/128 Westend Road, Bendel Estate, Airport Road, Effurun, Delta State</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>+2347078425122 <br> +2349152632080</div>
+                            
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>contactwaveonwestend@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-text">Subscribe to our newsletter for special events, exclusive offers, and culinary insights.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email">
+                        <button class="newsletter-btn">→
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons (add before closing body tag) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+</body>
+</html>
